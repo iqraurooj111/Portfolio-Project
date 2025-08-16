@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of John Doe, a web developer and designer specializing in creating beautiful and functional websites.">
+    <meta name="keywords" content="web developer, web designer, frontend developer, portfolio, John Doe, HTML, CSS, JavaScript, React">
+    <meta name="author" content="John Doe">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://johndoe-portfolio.com/">
+    <meta property="og:title" content="John Doe | Web Developer & Designer">
+    <meta property="og:description" content="Professional portfolio of John Doe, a web developer and designer specializing in creating beautiful and functional websites.">
+    <meta property="og:image" content="https://johndoe-portfolio.com/images/portfolio-preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://johndoe-portfolio.com/">
+    <meta property="twitter:title" content="John Doe | Web Developer & Designer">
+    <meta property="twitter:description" content="Professional portfolio of John Doe, a web developer and designer specializing in creating beautiful and functional websites.">
+    <meta property="twitter:image" content="https://johndoe-portfolio.com/images/portfolio-preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.ico">
+
+    <title>John Doe | Web Developer & Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <h1>John<span>Doe</span></h1>
+        </div>
+        <nav class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <input type="checkbox" id="theme-toggle-checkbox">
+                <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <div class="toggle-ball"></div>
+                </label>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="subtitle">Web Developer & Designer</span>
+            <h1>Creating <span>Digital</span> Experiences That Inspire</h1>
+            <p class="tagline">Turning ideas into elegant, functional websites</p>
+            <p>I'm a passionate web developer with expertise in creating responsive, user-friendly websites that deliver exceptional user experiences.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Let's Talk</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="profile-img-container">
+                <div class="profile-img"></div>
+            </div>
+        </div>
+        <div class="hero-social">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <div class="scroll-down">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2>About Me</h2>
+            <p>Get to know more about me and my experience</p>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://via.placeholder.com/600x800" alt="Profile Picture">
+            </div>
+            <div class="about-text">
+                <h3>My Journey</h3>
+                <p>I'm a passionate web developer and designer with over 5 years of experience creating beautiful, functional, and user-centered digital experiences. I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users.</p>
+                <p>Whether I'm designing a website, developing a mobile app, or branding a company, I bring my commitment to design excellence and user-centered thinking to every project I work on.</p>
+                <div class="personal-info">
+                    <div class="info-item">
+                        <span class="info-title">Name</span>
+                        <span class="info-value">John Doe</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Email</span>
+                        <span class="info-value">hello@johndoe.com</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Location</span>
+                        <span class="info-value">New York, USA</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-title">Availability</span>
+                        <span class="info-value">Available for freelance</span>
+                    </div>
+                </div>
+                <div class="resume-download">
+                    <h3>My Resume</h3>
+                    <p>Download my resume to learn more about my education, work experience, and skills. Feel free to contact me if you have any questions or would like to discuss potential collaborations.</p>
+                    <div class="resume-buttons">
+                        <a href="#" class="btn primary-btn download-cv"><i class="fas fa-file-pdf"></i> Download PDF</a>
+                        <a href="#" class="btn secondary-btn"><i class="fas fa-file-word"></i> Download Word</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="section-header">
+            <h2>My Skills</h2>
+            <p>Expertise and technologies I work with</p>
+        </div>
+        <div class="skills-content">
+            <div class="skills-tabs">
+                <div class="skill-tab active" data-tab="frontend">Frontend</div>
+                <div class="skill-tab" data-tab="backend">Backend</div>
+                <div class="skill-tab" data-tab="design">Design</div>
+                <div class="skill-tab" data-tab="tools">Tools</div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Frontend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                        <h4>HTML5</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="95%"></div>
+                        </div>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                        <h4>CSS3 / SASS</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="90%"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-js"></i></div>
+                        <h4>JavaScript</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="85%"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-react"></i></div>
+                        <h4>React</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="80%"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
+                        <h4>Vue.js</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="75%"></div>
+                        </div>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                        <h4>Bootstrap</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="85%"></div>
+                        </div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category" style="display: none;">
+                <h3>Backend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                        <h4>Node.js</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="75%"></div>
+                        </div>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h4>MongoDB</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="70%"></div>
+                        </div>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <h4>Express</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="65%"></div>
+                        </div>
+                        <span class="skill-percent">65%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h4>SQL</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="60%"></div>
+                        </div>
+                        <span class="skill-percent">60%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fab fa-php"></i></div>
+                        <h4>PHP</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="50%"></div>
+                        </div>
+                        <span class="skill-percent">50%</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                        <h4>Firebase</h4>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-width="65%"></div>
+                        </div>
+                        <span class="skill-percent">65%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="section-header">
+            <h2>Client Testimonials</h2>
+            <p>What people say about working with me</p>
+        </div>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-quote">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">"John is an exceptional developer who delivered our project on time and exceeded our expectations. His attention to detail and problem-solving skills are impressive. We'll definitely work with him again on future projects."</p>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
+                    </div>
+                    <div class="author-info">
+                        <h4>Michael Brown</h4>
+                        <p>CEO, TechStart Inc.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-quote">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">"Working with John was a pleasure. He understood our requirements perfectly and created a website that perfectly represents our brand. His communication was clear throughout the project, and he was always open to feedback."</p>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
+                    </div>
+                    <div class="author-info">
+                        <h4>Sarah Johnson</h4>
+                        <p>Marketing Director, Elevate Media</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-quote">
+                    <i class="fas fa-quote-left"></i>
+                </div>
+                <p class="testimonial-text">"John's technical expertise and creative approach helped us transform our outdated website into a modern, user-friendly platform that has significantly increased our conversion rates. His ability to translate our vision into reality was impressive."</p>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Client">
+                    </div>
+                    <div class="author-info">
+                        <h4>David Wilson</h4>
+                        <p>Founder, Innovate Solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2>My Projects</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="design">UI/UX Design</button>
+            <button class="filter-btn" data-filter="app">Mobile Apps</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-item" data-category="web">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/600x400" alt="E-commerce Website">
+                </div>
+                <div class="project-info">
+                    <h3>E-commerce Website</h3>
+                    <p>A fully responsive e-commerce website with shopping cart functionality.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="design">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/600x400" alt="Dashboard UI Design">
+                </div>
+                <div class="project-info">
+                    <h3>Dashboard UI Design</h3>
+                    <p>A modern dashboard interface design for a data analytics platform.</p>
+                    <div class="project-tech">
+                        <span>Figma</span>
+                        <span>Adobe XD</span>
+                        <span>UI/UX</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="app">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/600x400" alt="Fitness Tracker App">
+                </div>
+                <div class="project-info">
+                    <h3>Fitness Tracker App</h3>
+                    <p>A mobile application for tracking workouts and monitoring fitness progress.</p>
+                    <div class="project-tech">
+                        <span>React Native</span>
+                        <span>Firebase</span>
+                        <span>Redux</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="web">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/600x400" alt="Portfolio Website">
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website showcasing my skills and projects.</p>
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Contact Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>Feel free to contact me for any work or suggestions. I'll get back to you as soon as possible.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>New York, USA</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>john.doe@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+1 (123) 456-7890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 John Doe. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
