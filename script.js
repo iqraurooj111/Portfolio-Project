@@ -416,4 +416,77 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', animateOnScroll);
     window.addEventListener('load', animateOnScroll);
+
+    // Todo List Functionality
+    const todoInputField = document.getElementById('todo-input-field');
+    const addTaskBtn = document.getElementById('add-task-btn');
+    const taskList = document.getElementById('task-list');
+
+    // Load tasks from local storage
+    function loadTasks() {
+        const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+        tasks.forEach(task => {
+            createTaskElement(task.text, task.completed);
+        });
+    }
+
+    // Create a new task element
+    function createTaskElement(taskText, isCompleted = false) {
+        const li = document.createElement('li');
+        li.innerHTML = `
+            <div class="task-item">
+                <input type="checkbox" class="task-checkbox" ${isCompleted ? 'checked' : ''}>
+                <span class="task-text ${isCompleted ? 'completed' : ''}">${taskText}</span>
+                <button class="delete-task-btn"><i class="fas fa-trash"></i></button>
+            </div>
+        `;
+        taskList.appendChild(li);
+
+        // Add event listeners for the new task
+        const checkbox = li.querySelector('.task-checkbox');
+        const taskTextSpan = li.querySelector('.task-text');
+        const deleteBtn = li.querySelector('.delete-task-btn');
+
+        checkbox.addEventListener('change', function() {
+            taskTextSpan.classList.toggle('completed');
+            saveTasks();
+        });
+
+        deleteBtn.addEventListener('click', function() {
+            li.remove();
+            saveTasks();
+        });
+    }
+
+    // Add a new task
+    function addTask() {
+        const taskText = todoInputField.value.trim();
+        if (taskText !== '') {
+            createTaskElement(taskText);
+            todoInputField.value = '';
+            saveTasks();
+        }
+    }
+
+    // Save tasks to local storage
+    function saveTasks() {
+        const tasks = [];
+        taskList.querySelectorAll('li').forEach(li => {
+            const taskText = li.querySelector('.task-text').textContent;
+            const isCompleted = li.querySelector('.task-checkbox').checked;
+            tasks.push({ text: taskText, completed: isCompleted });
+        });
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+    }
+
+    // Event listeners
+    addTaskBtn.addEventListener('click', addTask);
+    todoInputField.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            addTask();
+        }
+    });
+
+    // Initial load
+    loadTasks();
 });
